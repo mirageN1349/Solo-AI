@@ -1,6 +1,6 @@
 {
   "name": "Solo",
-  "clients": ["twitter"],
+  "clients": ["twitter", "discord", "telegram"],
   "modelProvider": "anthropic",
   "settings": {
     "voice": {
