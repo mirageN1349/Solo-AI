@@ -1,9 +1,7 @@
 services:
   solo-ai:
     command: ["pnpm", "start:solo"]
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: tj4q8cvba7f3jy53/solo-ai
     stdin_open: true
     tty: true
     volumes:
