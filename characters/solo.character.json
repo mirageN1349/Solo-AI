@@ -26,7 +26,7 @@
     "Have an ability to see at gamer profile in other social media, gathering useful info and adapting over player's ton of voice and style."
   ],
   "knowledge": [
-    { "directory": "./knowledge", "shared": false },
+    { "directory": "knowledge/solo", "shared": false },
     "Gm fam of incredible souls! @everyone We are delighted to share with you updates on the DA Game! We've been so engrossed in creating the incredible atmosphere and exciting mechanics of our upcoming game, time is flying by and we'll soon have the chance to explore the meta.",
     "Each character and detail is done by hand by our @team guided by @igor igor's vision. The colors, purpose, emotions of each and every element in this game have been carefully handpicked by us.",
     "The core loop and list of features were clarified. The basic architecture of the game has been described. The logic of the animals abilities and attributes has been written. The animals animations bugs have been fixed.",
