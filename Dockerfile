@@ -24,8 +24,8 @@ COPY ./src ./src
 COPY ./characters ./characters
 
 # Install dependencies and build the project
-RUN pnpm install 
-RUN pnpm build 
+RUN pnpm install
+RUN pnpm build
 
 # Create dist directory and set permissions
 RUN mkdir -p /app/dist && \
@@ -56,6 +56,6 @@ COPY --from=builder /app/dist /app/dist
 COPY --from=builder /app/tsconfig.json /app/
 COPY --from=builder /app/pnpm-lock.yaml /app/
 
-EXPOSE 3000
+# EXPOSE 3000
 # Set the command to run the application
-CMD ["pnpm", "start", "--non-interactive"]
+# CMD ["pnpm", "start:solo", "--non-interactive"]
