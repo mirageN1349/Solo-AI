@@ -1,17 +1,22 @@
 services:
   solo-ai:
+    container_name: solo-ai
     command: ["pnpm", "start:solo"]
     image: tj4q8cvba7f3jy53/solo-ai
     stdin_open: true
     tty: true
     volumes:
       - ./data:/app/data
+      - ./knowledge:/app/characters/knowledge # added rag knowledge to agent rag
     environment:
       - SERVER_PORT=3000
       - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
       - TWITTER_USERNAME=${TWITTER_USERNAME}
       - TWITTER_PASSWORD=${TWITTER_PASSWORD}
       - TWITTER_EMAIL=${TWITTER_EMAIL}
+      - DISCORD_APPLICATION_ID=${DISCORD_APPLICATION_ID}
+      - DISCORD_API_TOKEN=${DISCORD_API_TOKEN}
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
     ports:
       - "3000:3000"
     restart: always
